@@ -3,11 +3,46 @@
   margin:0px;
 }
 #nav{
-  margin-top: 12px;
+ padding-top: 5px;
+
+  border-radius: 0px;
+  margin:1px 2px;
+  
 }
+#header{
+    background-color: rgb(223, 220, 220);
+  height:110px;
+  display:flex;
+
+}
+#header nav{
+  width:85%;
+
+  
+}
+#header #SB {
+  width:15%;
+
+ 
+height:200px;
+
+}
+#header #SB #logosb{
+
+width: 200px;
+height: 90px;
+margin-top:15px;
+margin-left:40px;
+}
+#SB #logosb{
+object-fit: cover;
+
+
+}
+
 #nav ul li{
   float:right;
-  width:280px;
+  width:230px;
   text-align: right;
   
   height:60px;
@@ -75,18 +110,32 @@ li a{
    color: aliceblue;
 }
 
-#nav ul #navcont{
-  background-color: rgb(0, 0, 0);
+#nav ul #navcont a{
+  background-color: rgb(146, 148, 58);
+  color:rgb(247, 242, 242);
+  border:2px solid rgb(253, 253, 253) ;
 }
+#nav ul #navcont{
+   background-color: rgb(148, 139, 12);
+   border:2px solid black ;
+}
+
+#nav ul #navcont a:hover{
+  background-color: rgb(31, 159, 233);
+  color: aliceblue;
+}
+
 #intro{
   width: 100%;
  
-  height: 900px;
+  height: 800px;
  
   background-color: rgb(245, 239, 239);
-  background-image: url(./assets/image.png);
+  background-image: url(./assets/2.png);
   background-repeat: no-repeat;
   background-size: cover;
+  
+  box-shadow: 10px 4px 8px rgba(252, 243, 243, 0.9);
 }
 #intro .divs{
   float:left;
@@ -140,9 +189,24 @@ margin:0;
   font-size: 30px;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  background-color: rgb(6, 40, 85);
+  
+ background-color: rgb(6, 40, 85); 
+ 
   color: white;
+   box-shadow: 0 -5px 30px -5px rgba(6, 33, 75, 0.9);
+   border-top: 1px solid white;
+  
+  
+}
+
+#footer .fc{
+  width: 33%;
+  
+ 
+  display:flex;
+  align-content: center;
+  justify-content: center;
+ 
 }
 #bio1{
   font-size: 70px;
@@ -154,4 +218,116 @@ margin:0;
 span{
    color: rgba(139, 141, 33, 0.568);
     color: rgba(0, 0, 0, 0.568);
+}
+#bio2{
+margin-top: 25px;
+}
+
+#fd1{
+  
+  border-right: 2px solid white;
+ 
+}
+
+
+#fd1 a{
+ display:flex;
+ align-content: center;
+ justify-content: center;
+ flex-direction: column;
+ color:white;
+}
+#fd2{
+  
+  border-right: 2px solid white;
+ 
+}
+
+#fd2 a{
+  color:white;
+  display:flex;
+  align-content: center;
+ justify-content: center;
+ flex-direction: column;
+}
+#fd3 a{
+  color:white;
+  display:flex;
+  align-content: center;
+ justify-content: center;
+ flex-direction: column;
+
+}
+
+
+
+/* App.css */
+.App {
+  text-align: center;
+  padding: 50px;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.popup-box {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background: white;
+  
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+#contactbox{
+  width:1000px;
+}
+#ctop{
+  height:50px;
+  background-color: rgb(17, 31, 112);
+}
+#cbody{
+  height:600px;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: row;
+
+
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+ 
+  
+}
+#contactbox  #cbody #cdiv1, #cdiv2{
+  width:50%;
+  height:100%;
+  background-color: azure;
+  
+
+}
+
+#cdiv1{
+  display: flex;
+   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: aqua;
+}
+.form-group{
+  position:relative;
+}
+
+
+.form-group input, .form-group textarea{
+  width:300px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding:10px
 }
