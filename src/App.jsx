@@ -2,6 +2,11 @@
 import videourl from './assets/final.mp4';
 import React, { useState } from 'react';
 import Sirisha from './assets/Sirisha.png';
+import sblogo from "./assets/sblogo.png";
+import ln from "./assets/linkedin.png";
+import git from "./assets/github.png";
+import mail from "./assets/mail.png" ;
+import cross from "./assets/cross.png";
 function App() {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -27,7 +32,7 @@ function App() {
     <div>
 
       <header id="header">
-        <div id='SB'><img id="logosb" src=".\assets\sblogo.png" /></div>
+        <div id='SB'><img id="logosb" src={sblogo} /></div>
         <nav id='nav'>
           <ul>
             <li id="navcont"><a onClick={handleOpen} href='#'>Sign in</a></li>
@@ -60,7 +65,7 @@ function App() {
 
           <a href='https://www.linkedin.com/in/sirisha-dalasari-990871336/' >
 
-            <img src="src\assets\linkedin.png" alt="LinkedIn" width="50" height="50" />
+            <img src={ln} alt="LinkedIn" width="50" height="50" />
             <h3>Linked In</h3>
 
           </a>
@@ -69,13 +74,13 @@ function App() {
         </div>
         <div class="fc" id='fd2'>
           <a href="https://github.com/siridalasari" >
-            <img src="src\assets\github.png" alt='Git Hub' width='50' height='50' />
+            <img src={git} alt='Git Hub' width='50' height='50' />
             <h3>Git Hub</h3>
           </a>
         </div>
         <div class="fc" id='fd3'>
           <a href="" >
-            <img src="src\assets\mail.png" alt='Git Hub' width='50' height='50' />
+            <img src={mail} alt='Git Hub' width='50' height='50' />
             <h3>@Mail</h3>
           </a>
         </div>
@@ -89,7 +94,7 @@ function App() {
               <div className="popup-box">
                 <section id="contactbox">
                   <div id='ctop' width='500px' height='200px' >
-                   <a href="#" onClick={handleClose}><img src="src\assets\cross.png" width='40px' height='40px ' style={{float:'right'}}/></a>
+                   <a href="#" onClick={handleClose}><img src={cross} width='40px' height='40px ' style={{float:'right'}}/></a>
                   </div>
                   <div id='cbody'>
                     <div id="cdiv1">
