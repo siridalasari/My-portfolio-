@@ -1,7 +1,7 @@
 
 import videourl from './assets/final.mp4';
 import React, { useState } from 'react';
-import Sirisha from 'src/assets/Sirisha.png';
+import Sirisha from './assets/Sirisha.png';
 function App() {
   const [showPopup, setShowPopup] = useState(false);
 
