@@ -1,7 +1,7 @@
 
 import videourl from './assets/final.mp4';
 import React, { useState } from 'react';
-import Sirisha from './assets/ss.png';
+import Sirisha from './assets/ss.jpg';
 import sblogo from "./assets/sblogo.png";
 import ln from "./assets/linkedin.png";
 import git from "./assets/github.png";
