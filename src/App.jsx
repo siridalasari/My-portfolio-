@@ -1,12 +1,13 @@
 
 import videourl from './assets/final.mp4';
 import React, { useState } from 'react';
-import Sirisha from './assets/Sirisha.png';
+import Sirisha from './assets/ss.png';
 import sblogo from "./assets/sblogo.png";
 import ln from "./assets/linkedin.png";
 import git from "./assets/github.png";
 import mail from "./assets/mails.png" ;
 import cross from "./assets/cross.png";
+import contimg from './assets/contimg.png';
 function App() {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -116,7 +117,7 @@ function App() {
 
                     </div>
                     <div id="cdiv2">
-<img src='src\assets\contimg.png' style={{backgroundAttachment:"fixed", objectFit:'cover', width:'100%', height:'100%'}}></img>
+<img src={contimg} style={{backgroundAttachment:"fixed", objectFit:'cover', width:'100%', height:'100%'}}></img>
                     </div>
                   </div>
 
