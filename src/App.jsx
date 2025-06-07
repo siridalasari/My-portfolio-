@@ -1,7 +1,7 @@
 
 import videourl from './assets/final.mp4';
 import React, { useState } from 'react';
-
+import Sirisha from 'src/assets/Sirisha.png';
 function App() {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -27,7 +27,7 @@ function App() {
     <div>
 
       <header id="header">
-        <div id='SB'><img id="logosb" src="src\assets\sblogo.png" /></div>
+        <div id='SB'><img id="logosb" src=".\assets\sblogo.png" /></div>
         <nav id='nav'>
           <ul>
             <li id="navcont"><a onClick={handleOpen} href='#'>Sign in</a></li>
@@ -50,7 +50,7 @@ function App() {
 
         </div>
         <div class="divs" id="photo">
-          <img src="src\assets\siri.png" alt="siri" />
+          <img src={Sirisha} alt="siri" />
         </div>
       </section>
       <footer id="footer">
