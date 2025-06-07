@@ -5,7 +5,7 @@ import Sirisha from './assets/Sirisha.png';
 import sblogo from "./assets/sblogo.png";
 import ln from "./assets/linkedin.png";
 import git from "./assets/github.png";
-import mail from "./assets/mail.png" ;
+import mail from "./assets/mails.png" ;
 import cross from "./assets/cross.png";
 function App() {
   const [showPopup, setShowPopup] = useState(false);
